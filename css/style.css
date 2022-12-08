@@ -11,13 +11,14 @@ body{
 header{
     background-color: #BF9270;
     color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 footer{
     background-color: #BF9270;
     padding: 15px;
     text-align: center;
-    /* position: absolute;
-    bottom: 0px; */
 }
 
 header h1{
@@ -26,7 +27,6 @@ header h1{
 ul li{
     list-style: none;
     font-size: 1.5rem;
-
 }
 ul li a{
     color: black;
@@ -35,11 +35,20 @@ ul li a{
 nav ul{
     padding-bottom: 15px;
     text-align: center;
+    display: flex;
 }
 nav ul li{
-    display: inline;
     margin: 0px 10px;
-    font-weight: bold;    
+    font-weight: bold;
+    transition: all;
+}
+nav ul li:hover{
+    background-color: #EDCDBB;
+    border-radius: 5px;
+}
+nav ul li:active{
+    background-color: #E3B7A0;
+    border-radius: 5px;
 }
 
 .heder-no-inicio{
@@ -50,7 +59,7 @@ nav ul li{
     padding: 15px;
 }
 .heder-inicio h1{
-    padding: 80px 0px 40px 50px;
+    padding: 60px;
     font-size: 4rem;
 }
 
@@ -59,6 +68,12 @@ nav ul li{
 }
 
 /* INICIO */
+.main-inicio{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 60px;
+}
 .heder-inicio{
     font-size: 2rem;
 }
@@ -69,16 +84,26 @@ nav ul li{
 .parrafo-inicio p {
     margin: 20px 0px;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
-
-.presentacion-inicio {
+.presentacion-inicio img{
     margin: 30px;
+    width: 650px;
+    border-radius: 10px;
+    border: solid #BF9270;
 }
 
 /* TIENDA */
 .elem-tienda{
-    margin: 20px;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.elem-tienda__tarjeta{
+    margin: 10px;
     padding: 20px;
     background-color: #E3B7A0;
     border-radius: 15px;
@@ -87,54 +112,138 @@ nav ul li{
 }
 .elem-tienda__tarjeta img{
     width: 260px;
+    border: 2px solid #EDCDBB;
     border-radius: 15px;
+}
+.tarjeta-btn {
+    background-color: #EDCDBB;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family:  'Sono', sans-serif;
+    transition: all;
+}
+.tarjeta-btn:hover{
+    background-color:  #FFEDDB;
+}
+.tarjeta-btn:active{
+    background-color: #E3B7A0;
 }
 
 /* PERSONALIZADO */
+.main-pers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .tarjeta-pers {
-    margin: 80px 100px;
+    margin: 152px;
+    width: 800px;
     padding: 40px 80px 70px 80px;
     border-radius: 20px;
     background-color: #E3B7A0;
+}
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.formulario div{
+    margin: 10px;
 }
 .formulario input{
     background: none;
     border: none;
     outline: none;
     border-bottom: dotted #BF9270;
+    font-size: medium;    
+    width: 300px;
 }
 .formulario select{
     background: none;
+    background-color: #E3B7A0;
     border: none;
     outline: none;
     border: solid #BF9270;
     border-radius: 10px;
     padding: 2px;
 }
+.formulario select:hover{
+    border: solid #EDCDBB;
+    background-color: #EDCDBB;
+}
 .formulario-btn {
     text-decoration: none;
+    border: none;
     font-weight: bold;
     color: black;
-    background-color: #BF9270;
-    border-radius: 10px;
+    background-color: #EDCDBB;
+    border-radius: 5px;
     position: relative;
     top: 20px;
-    padding: 5px;
+    padding: 10px;
+    margin: 5px;
+    transition: all;
+}
+.formulario-btn:hover{
+    background-color:  #FFEDDB;
+}
+.formulario-btn:active{
+    background-color: #E3B7A0;
+}
+.datos-form{
+    width: 300px;
+}
+.cargar-img-form{
+    width: 300px;
+}
+.cargar-img-form input{
+    border: dashed #BF9270;
+    height: 199px;
+}
+.pedido-form{
+    margin: 15px 0px;
+    width: 640px;
+}
+.pedido-form input{
+    width: 620px;
+    height: 100px;
+    border: dashed #BF9270;
+}
+.formulario-pedido{
+    border:none;
+    border-radius: 5px;
+    border: dashed #BF9270;
+    background: none;
+    width: 620px;
+    height: 100px;
+    font-size: large;
 }
 
 /* GALERIA */
 .titulo-tienda {
     margin: 30px;
     text-align: center;
+    font-size: 1.8rem;
+    margin: 60px 0px;
 }
-
 .fotos-galeria {
-    margin: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
     align-content: center;
 }
 .fotos-galeria img{
-    height: 150px;
-    margin: 10px;;
+    height: 250px;
+    margin: 10px;
+    border: 2px solid #BF9270;
+    transition: all 0.3s;
+}
+.fotos-galeria img:hover {
+    transform: scale(1.3);
 }
 
 /* CONTACTO */

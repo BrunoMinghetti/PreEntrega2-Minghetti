@@ -30,33 +30,39 @@
 
     </header>
 
-    <main>
+    <main class="main-pers">
         <!-- Formulario de petición -->
         <section class="tarjeta-pers">
-            <h2>Datos de contacto</h2>
-            <form class="formulario">
+            <form class="formulario" id="form-pers">
                 <!-- Datos principales -->
-                <input type="text" placeholder="Nombre" name="Nombre"/>
-                <br>
-                <input type="text" placeholder="Mail" name="Mail"/>
-                <br>
-                <input type="text" placeholder="Localidad" name="Localidad"/>
-                <br>
-                <br>
-                <!-- Selector de modelo pedido -->
-                <h4>Indique modelo:</h4>
-                <select class="formulario_select" name="modelo">
-                    <option value="corto">Pelo corto</option>
-                    <option value="largo">Pelo largo</option>
-                    <option value="a-definir">A definir</option>
-                </select>
-                <br>
-                <br>
+                <div class="datos-form">
+                    <h2>Datos de contacto</h2>
+                    <br>
+                    <input type="text" placeholder="Nombre" name="Nombre"/>
+                    <br>
+                    <input type="text" placeholder="Mail" name="Mail"/>
+                    <br>
+                    <input type="text" placeholder="Localidad" name="Localidad"/>
+                    <br>
+                    <br>
+                    <!-- Selector de modelo pedido -->
+                    <h4>Indique modelo:</h4>
+                    <select class="formulario_select" name="modelo">
+                        <option value="corto">Pelo corto</option>
+                        <option value="largo">Pelo largo</option>
+                        <option value="a-definir">A definir</option>
+                    </select>
+                </div>
+                <div class="cargar-img-form">
+                    <h2>Archivos de ejemplo</h2>
+                    <input class="file-form" type="file">
+                </div>
                 <!-- Cuadro a rellenar con el pedido-->
-                <input class="formulario-pedido" type="text" placeholder="Pedido..." name="Petición"/>
-                <br>
-                <a class="formulario-btn" href="">Enviar</a>
+                <div class="pedido-form">
+                    <textarea class="formulario-pedido" name="Pedido" id="form-pers" cols="30" rows="10" placeholder="Pedido..."></textarea>
+                </div>
             </form>
+            <input class="formulario-btn" type="submit" value="Enviar" />
         </section>
     </main>
 
