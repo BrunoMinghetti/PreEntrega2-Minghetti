@@ -224,7 +224,6 @@ nav ul li:active{
 
 /* GALERIA */
 .titulo-tienda {
-    margin: 30px;
     text-align: center;
     font-size: 1.8rem;
     margin: 60px 0px;
@@ -258,4 +257,96 @@ nav ul li:active{
 }
 .tarjeta-contacto h2{
     margin-bottom: 60px;
+}
+
+/* MEDIA QUERIES */
+
+/* tablet */
+/* @media only screen and (max-with: 768px){
+
+} */
+
+/* celular */
+@media only screen and (max-width: 576px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .heder-no-inicio{
+        flex-direction: column;
+    }
+    .heder-no-inicio h1{
+        font-size: 3rem;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li{
+        font-size: 1.6rem;
+        padding: 5px;
+    }
+    /* INICIO */
+    .heder-inicio h1{
+        padding: 40px;
+        font-size: 3.5rem;
+    }
+    .nav-inicio ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-inicio ul li{
+        font-size: 1.5rem;
+    }
+    .main-inicio{
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .parrafo-inicio p {
+        margin: 0px;
+    }
+    .presentacion-inicio img{
+        margin: 10px;
+        width: 500px;
+    }
+
+    /* TIENDA */
+    .elem-tienda{
+        margin: 10px 0px;
+        justify-content: space-evenly;
+    }
+    .elem-tienda__tarjeta{
+        margin: 10px 0px;
+        padding: 10px;
+        width: 250px;
+    }
+    .elem-tienda__tarjeta img{
+        width: 230px;
+        border: 3px solid #EDCDBB;
+    }
+    .tarjeta-btn {
+        padding: 5px;
+        font-size: medium;
+    }
+
+    /* GALERIA */
+    .titulo-tienda {
+        margin: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 30px 0px;
+    }
+    .fotos-galeria {
+        justify-content: space-evenly;
+        margin: 20px 0px;
+    }
+    .fotos-galeria img{
+        height: 190px;
+        margin: 10px 0px;
+    }
+    .fotos-galeria img:hover {
+        transform: scale(1.2);
+    }
 }
