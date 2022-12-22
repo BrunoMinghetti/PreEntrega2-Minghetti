@@ -145,13 +145,9 @@ nav ul li:active{
     background-color: #E3B7A0;
 }
 .formulario{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-.formulario div{
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 .formulario input{
     background: none;
@@ -193,31 +189,19 @@ nav ul li:active{
 .formulario-btn:active{
     background-color: #E3B7A0;
 }
-.datos-form{
-    width: 300px;
-}
-.cargar-img-form{
-    width: 300px;
-}
 .cargar-img-form input{
     border: dashed #BF9270;
     height: 199px;
 }
 .pedido-form{
-    margin: 15px 0px;
-    width: 640px;
-}
-.pedido-form input{
-    width: 620px;
-    height: 100px;
-    border: dashed #BF9270;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .formulario-pedido{
     border:none;
-    border-radius: 5px;
     border: dashed #BF9270;
     background: none;
-    width: 620px;
+    width: 630px;
     height: 100px;
     font-size: large;
 }
@@ -229,15 +213,14 @@ nav ul li:active{
     margin: 60px 0px;
 }
 .fotos-galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
-    align-content: center;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 30px;
 }
 .fotos-galeria img{
-    height: 250px;
-    margin: 10px;
+    width: 430px;
     border: 2px solid #BF9270;
     transition: all 0.3s;
 }
@@ -339,12 +322,13 @@ nav ul li:active{
         margin: 30px 0px;
     }
     .fotos-galeria {
-        justify-content: space-evenly;
-        margin: 20px 0px;
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-self: center;
     }
     .fotos-galeria img{
-        height: 190px;
-        margin: 10px 0px;
+        width: 250px;
     }
     .fotos-galeria img:hover {
         transform: scale(1.2);
