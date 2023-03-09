@@ -51,13 +51,17 @@ nav ul li{
     padding: 15px;
 }
 
+.footer-redes{
+
+}
+
 
 /* INICIO */
 .main-inicio{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 60px;
+    margin: 70px;
 }
 .parrafo-inicio {
     margin: 20px;
@@ -98,15 +102,6 @@ nav ul li{
     border: 2px solid #EDCDBB;
     border-radius: 15px;
 }
-.tarjeta-btn {
-    background-color: #EDCDBB;
-    padding: 3px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-family:  'Sono', sans-serif;
-    transition: all;
-}
 
 
 /* PERSONALIZADO */
@@ -123,13 +118,9 @@ nav ul li{
     background-color: #E3B7A0;
 }
 .formulario{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-.formulario div{
-    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 .formulario input{
     background: none;
@@ -148,6 +139,10 @@ nav ul li{
     border-radius: 10px;
     padding: 2px;
 }
+.formulario select:hover{
+    border: solid #EDCDBB;
+    background-color: #EDCDBB;
+}
 .formulario-btn {
     text-decoration: none;
     border: none;
@@ -161,31 +156,25 @@ nav ul li{
     margin: 5px;
     transition: all;
 }
-.datos-form{
-    width: 300px;
+.formulario-btn:hover{
+    background-color:  #FFEDDB;
 }
-.cargar-img-form{
-    width: 300px;
+.formulario-btn:active{
+    background-color: #E3B7A0;
 }
 .cargar-img-form input{
     border: dashed #BF9270;
     height: 199px;
 }
 .pedido-form{
-    margin: 15px 0px;
-    width: 640px;
-}
-.pedido-form input{
-    width: 620px;
-    height: 100px;
-    border: dashed #BF9270;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .formulario-pedido{
     border:none;
-    border-radius: 5px;
     border: dashed #BF9270;
     background: none;
-    width: 620px;
+    width: 630px;
     height: 100px;
     font-size: large;
 }
@@ -198,17 +187,19 @@ nav ul li{
     margin: 60px 0px;
 }
 .fotos-galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
-    align-content: center;
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 30px;
 }
 .fotos-galeria img{
-    height: 250px;
-    margin: 10px;
-    border: 2px solid #BF9270;
+    width: 430px;
+    border: 2px solid #bf9270;
     transition: all 0.3s;
+}
+.fotos-galeria img:hover {
+    transform: scale(1.3);
 }
 
 /* CONTACTO */
@@ -229,52 +220,59 @@ nav ul li{
 /*          MEDIA QUERIES           */
 /*       Celular (hasta 576)        */
 
-/* CONTACTO */
-.tarjeta-contacto {
-    margin: 80px 400px;
-    padding: 40px 80px;
-    border-radius: 20px;
-    background-color: #E3B7A0; 
+@media only screen and (max-width: 576px) {
+    /* INICIO */
+    .main-inicio{
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .parrafo-inicio p {
+        margin: 0px;
+    }
+    .presentacion-inicio img{
+        margin: 10px;
+        width: 500px;
+    }
+  
+    /* TIENDA */
+    .elem-tienda{
+        margin: 10px 0px;
+        justify-content: space-evenly;
+    }
+    .elem-tienda__tarjeta{
+        margin: 10px 0px;
+        padding: 10px;
+        width: 250px;
+    }
+    .elem-tienda__tarjeta img{
+        width: 230px;
+        border: 3px solid #EDCDBB;
+    }
+
+    /* PERSONALIZADO */
+  
+  
+    /* GALERIA */
+    .titulo-tienda {
+        margin: 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 30px 0px;
+    }
+    .fotos-galeria {
+        margin: 0px 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-self: center;
+    }
+    .fotos-galeria img{
+        width: 240px;
+    }
+    .fotos-galeria img:hover {
+        transform: scale(1.2);
+    }
+  
+  
+    /* CONTACTO */
+
 }
-.tarjeta-contacto li {
-    margin: 30px 0px; 
-}
-.tarjeta-contacto h2 {
-    margin-bottom: 60px; 
-}
-
-/* TIENDA */
-.elem-tienda {
-  margin: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center; }
-
-.elem-tienda__tarjeta {
-  margin: 10px;
-  padding: 20px;
-  background-color: #E3B7A0;
-  border-radius: 15px;
-  text-align: center;
-  width: 300px; }
-
-.elem-tienda__tarjeta img {
-  width: 260px;
-  border: 2px solid #EDCDBB;
-  border-radius: 15px; }
-
-.tarjeta-btn {
-  background-color: #EDCDBB;
-  padding: 3px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-family: 'Sono', sans-serif;
-  transition: all; }
-
-.tarjeta-btn:hover {
-  background-color: #FFEDDB; }
-
-.tarjeta-btn:active {
-  background-color: #E3B7A0; }
