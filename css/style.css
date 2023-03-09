@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFEDDB;
+    font-family: 'Sono', sans-serif;
+}
+
+header{
+    background-color: #BF9270;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+footer{
+    background-color: #BF9270;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1{
+    font-weight: bold;
+}
+ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+nav ul{
+    padding-bottom: 15px;
+    text-align: center;
+    display: flex;
+}
+nav ul li{
+    margin: 0px 10px;
+    font-weight: bold;
+    transition: all;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+}
+.header h1{
+    padding: 15px;
+}
+
+
+/* INICIO */
+.main-inicio{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 60px;
+}
+.parrafo-inicio {
+    margin: 20px;
+    width: 500px;
+}
+.parrafo-inicio p {
+    margin: 20px 0px;
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.presentacion-inicio img{
+    margin: 30px;
+    width: 650px;
+    border-radius: 10px;
+    border: solid #BF9270;
+}
+
+
+/* TIENDA */
+.elem-tienda{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.elem-tienda__tarjeta{
+    margin: 10px;
+    padding: 20px;
+    background-color: #E3B7A0;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+}
+.elem-tienda__tarjeta img{
+    width: 260px;
+    border: 2px solid #EDCDBB;
+    border-radius: 15px;
+}
+.tarjeta-btn {
+    background-color: #EDCDBB;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family:  'Sono', sans-serif;
+    transition: all;
+}
+
+
+/* PERSONALIZADO */
+.main-pers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.tarjeta-pers {
+    margin: 152px;
+    width: 800px;
+    padding: 40px 80px 70px 80px;
+    border-radius: 20px;
+    background-color: #E3B7A0;
+}
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.formulario div{
+    margin: 10px;
+}
+.formulario input{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: dotted #BF9270;
+    font-size: medium;    
+    width: 300px;
+}
+.formulario select{
+    background: none;
+    background-color: #E3B7A0;
+    border: none;
+    outline: none;
+    border: solid #BF9270;
+    border-radius: 10px;
+    padding: 2px;
+}
+.formulario-btn {
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    color: black;
+    background-color: #EDCDBB;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    margin: 5px;
+    transition: all;
+}
+.datos-form{
+    width: 300px;
+}
+.cargar-img-form{
+    width: 300px;
+}
+.cargar-img-form input{
+    border: dashed #BF9270;
+    height: 199px;
+}
+.pedido-form{
+    margin: 15px 0px;
+    width: 640px;
+}
+.pedido-form input{
+    width: 620px;
+    height: 100px;
+    border: dashed #BF9270;
+}
+.formulario-pedido{
+    border:none;
+    border-radius: 5px;
+    border: dashed #BF9270;
+    background: none;
+    width: 620px;
+    height: 100px;
+    font-size: large;
+}
+
+
+/* GALERIA */
+.titulo-tienda {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 60px 0px;
+}
+.fotos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    align-content: center;
+}
+.fotos-galeria img{
+    height: 250px;
+    margin: 10px;
+    border: 2px solid #BF9270;
+    transition: all 0.3s;
+}
+
+/* CONTACTO */
+.tarjeta-contacto {
+    margin: 80px 400px;
+    padding: 40px 80px;
+    border-radius: 20px;
+    background-color: #E3B7A0;
+}
+.tarjeta-contacto li{
+    margin: 30px 0px;
+}
+.tarjeta-contacto h2{
+    margin-bottom: 60px;
+}
+
+
+/*          MEDIA QUERIES           */
+/*       Celular (hasta 576)        */
+
+/* CONTACTO */
+.tarjeta-contacto {
+    margin: 80px 400px;
+    padding: 40px 80px;
+    border-radius: 20px;
+    background-color: #E3B7A0; 
+}
+.tarjeta-contacto li {
+    margin: 30px 0px; 
+}
+.tarjeta-contacto h2 {
+    margin-bottom: 60px; 
+}
+
+/* TIENDA */
+.elem-tienda {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+
+.elem-tienda__tarjeta {
+  margin: 10px;
+  padding: 20px;
+  background-color: #E3B7A0;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px; }
+
+.elem-tienda__tarjeta img {
+  width: 260px;
+  border: 2px solid #EDCDBB;
+  border-radius: 15px; }
+
+.tarjeta-btn {
+  background-color: #EDCDBB;
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Sono', sans-serif;
+  transition: all; }
+
+.tarjeta-btn:hover {
+  background-color: #FFEDDB; }
+
+.tarjeta-btn:active {
+  background-color: #E3B7A0; }

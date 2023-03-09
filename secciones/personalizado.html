@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Sono:wght,MONO@300,0.4&display=swap" 
+        rel="stylesheet">
+    <!-- Último siempre el link a CSS y el título -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Personalizado</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Cofias MM</h1>
+        <!-- Menu de navegación -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./tienda.html">Tienda</a></li>
+                <li><a href="./personalizado.html">Personalizado</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main class="main-pers">
+        <!-- Formulario de petición -->
+        <section class="tarjeta-pers">
+            <form class="formulario" id="form-pers">
+                <!-- Datos principales -->
+                <div class="datos-form">
+                    <h2>Datos de contacto</h2>
+                    <br>
+                    <input type="text" placeholder="Nombre" name="Nombre"/>
+                    <br>
+                    <input type="text" placeholder="Mail" name="Mail"/>
+                    <br>
+                    <input type="text" placeholder="Localidad" name="Localidad"/>
+                    <br>
+                    <br>
+                    <!-- Selector de modelo pedido -->
+                    <h4>Indique modelo:</h4>
+                    <select class="formulario_select" name="modelo">
+                        <option value="corto">Pelo corto</option>
+                        <option value="largo">Pelo largo</option>
+                        <option value="a-definir">A definir</option>
+                    </select>
+                </div>
+                <div class="cargar-img-form">
+                    <h2>Archivos de ejemplo</h2>
+                    <input class="file-form" type="file">
+                </div>
+                <!-- Cuadro a rellenar con el pedido-->
+                <div class="pedido-form">
+                    <textarea class="formulario-pedido" name="Pedido" id="form-pers" cols="30" rows="10" placeholder="Pedido..."></textarea>
+                </div>
+            </form>
+            <input class="formulario-btn" type="submit" value="Enviar" />
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Instagram</li>
+        </ul>
+    </footer>
+</body>
+</html>
