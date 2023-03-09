@@ -13,12 +13,11 @@ header{
     color: black;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 footer{
     background-color: #BF9270;
     padding: 15px;
-    text-align: center;
 }
 
 header h1{
@@ -33,7 +32,6 @@ ul li a{
     text-decoration: none;
 }
 nav ul{
-    padding-bottom: 15px;
     text-align: center;
     display: flex;
 }
@@ -51,11 +49,24 @@ nav ul li{
     padding: 15px;
 }
 
-/* .footer-redes{
 
-} */
+.footer-redes{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1);
+}
+.footer-redes li{
+    display: flex;
+    align-items: center;
+}
+.footer-redes li img{
+    height: 35px;
+    margin-right: 5px;
+}
 
 
+/* -------SECCIONES------- */
 /* INICIO */
 .main-inicio{
     display: flex;
@@ -221,6 +232,24 @@ nav ul li{
 /*       Celular (hasta 576)        */
 
 @media only screen and (max-width: 576px) {
+
+    header{
+        flex-wrap: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li{
+        font-size: 1.6rem;
+        padding: 5px;
+    }
+
+    /* -------SECCIONES------- */
     /* INICIO */
     .main-inicio{
         flex-wrap: wrap;
