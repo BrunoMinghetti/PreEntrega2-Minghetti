@@ -1,0 +1,23 @@
+{
+  "name": "preentrega2-minghetti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoMinghetti/PreEntrega2-Minghetti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoMinghetti/PreEntrega2-Minghetti/issues"
+  },
+  "homepage": "https://github.com/BrunoMinghetti/PreEntrega2-Minghetti#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  }
+}
