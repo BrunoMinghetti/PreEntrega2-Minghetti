@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Sono:wght,MONO@300,0.4&display=swap" 
-        rel="stylesheet">
-    <!-- Último siempre el link a CSS y el título -->
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Mi letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght,MONO@300,0.4&display=swap" rel="stylesheet">
+    <!-- Mi CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>CofiasMM</title>
 </head>
@@ -29,39 +31,101 @@
     </header>
 
     <main class="main-inicio">
-        <!-- gif de imagenes -->
-        <div class="presentacion-inicio">
-            <img 
-                src="./gifs/bucle2.gif" 
-                alt="Productos ejemplo"
-                width="300px"
-                frameborder="0">
-            </img>
-        </div>
+
+        <!-- Carousel de boostrap -->
+        <div id="carouselExample" class="carousel slide limitador-carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../media/img/estampado-blanco-floreado-planchado.jpg" class="d-block w-100" alt="Cofia estampada flores rosas chicas" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchada-estampado-beige-floreado.jpg" class="d-block w-100" alt="Cofia estampada flor rosa grande" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchada-estampado-rosa-floreado.jpg" class="d-block w-100" alt="Cofia rosa estampada flor grande" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchada-rosa-estampado-florado.jpg" class="d-block w-100" alt="Cofia estampada rosa y blanco floreado" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchado-rojo-floreado-flanco.jpg" class="d-block w-100" alt="Cofia roja estampada margaritas" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchado-salmon-lisa.jpg" class="d-block w-100" alt="Cofia lisa salmon" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchado-liso-fucsia.jpg" class="d-block w-100" alt="Cofia lisa fucsia" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchado-liso-negro.jpg" class="d-block w-100" alt="Cofia lisa negra" />
+              </div>
+              <div class="carousel-item">
+                <img src="../media/img/planchado-lila-lisa.jpg" class="d-block w-100" alt="Cofia lisa lila" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
         <!-- Parrafo de presentación -->
         <div class="parrafo-inicio">
+            <h3>
+                ¡Hola!
+            </h3>
             <p>
-                Creamos cofias para todos los gustos, hechas a mano en casa con mucho cariño.
-                Contamos con todo tipo de estampado y colores, tambien tenemos lisas y, si 
-                ninguna te convence, tambien podes hacer tu pedido de algo mas personalizado.
+                Mi nombre es Mica y confecciono cofias para todos los gustos, hechas a mano en casa con mucho cariño.
+                Cuento con telas de todo tipo de estampado y colores, tambien tengo lisas y, si 
+                ninguna te convence, tambien podes hacer tu pedido de algo mas personalizado o fuera del catálogo.
             </p>
             <p>
-                Nuestras cofias son de media unica, pero hay dos modelos, una para cabello
-                largo y otra para cabello corto.
+                Las cofias son de media única, pero hay dos modelos, una para cabello
+                largo y otra para cabello corto. Haceme saber cual es la que preferis.
             </p>
             <p>
-                ¡Esperamos que encuentres lo que te gusta acá!
+                ¡Espero que encuentres lo que te gusta y me escribas!
             </p>
         </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <ul class="footer-redes">
-            <li><img src="../media/icon/iconmonstr-instagram-11-240.png" alt="instagram-icon">@micaminghetti</li>
+            <li> <img src="../media/icon/iconmonstr-instagram-11-240.png" alt="instagram-icon">@micaminghetti</li>
             <li><img src="../media/icon/icons8-facebook-96.png" alt="facebook-icon">Micaela Minghetti</li>
             <li><img src="../media/icon/iconmonstr-whatsapp-1-240.png" alt="whatsapp-icon">(2241) xx-xxxx</li>
         </ul>
+    </footer> -->
+
+    <footer class="footer">
+        <div class="footer-grupo1">
+            <div class="box">
+                <h2>SOBRE MI</h2>
+                <p>Mi nombre es Mica y confecciono cofias a mano y con el diseño que prefieras.</p>
+                <p>Podes pedirme algun estampado de los que encuentres acá o buscamos el que más te guste.</p>
+            </div>
+            <div class="box">
+                <h2>SEGUIME</h2>
+                <div class="redes">
+                    <a href="https://www.instagram.com/micaminghetti/"><img src="../media/icon/iconmonstr-instagram-11-240.png" alt="instagram-icon">@micaminghetti</a>
+                    <a href="https://www.facebook.com/mika.minghetti"><img src="../media/icon/icons8-facebook-96.png" alt="facebook-icon">Micaela Minghetti</a>
+                    <a><img src="../media/icon/iconmonstr-whatsapp-1-240.png" alt="whatsapp-icon">(2241) xx-xxxx</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-grupo2">
+            <small>&copy; 2023 <b>Bruno Minghetti</b> Todos los Derechos Reservados. </small>
+        </div>
     </footer>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

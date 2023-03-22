@@ -8,20 +8,23 @@ body{
     font-family: 'Sono', sans-serif;
 }
 
+/* --------------HEADER-------------- */
 header{
     background-color: #BF9270;
     color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-footer{
-    background-color: #BF9270;
-    padding: 15px;
+    padding: 0 15px;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
 }
 
 header h1{
     font-weight: bold;
+    margin: 0;
+    padding: 10px;
 }
 ul li{
     list-style: none;
@@ -33,6 +36,8 @@ ul li a{
 }
 nav ul{
     text-align: center;
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 nav ul li{
@@ -41,28 +46,54 @@ nav ul li{
     transition: all;
 }
 
-.header{
-    position: sticky;
-    top: 0px;
-}
-.header h1{
+/* ---------------FOOTER------------ */
+.footer{
+    background-color: #BF9270;
+    width: 100%;
     padding: 15px;
+    z-index: 1;
 }
-
-
-.footer-redes{
+.footer .footer-grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; 
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(1);
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 50px;
+    padding: 15px 0px;
 }
-.footer-redes li{
-    display: flex;
-    align-items: center;
+.footer .footer-grupo1 .box h2{
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
-.footer-redes li img{
-    height: 35px;
+.footer .footer-grupo1 .box p{
+    margin-bottom: 10px;
+}
+.footer .footer-grupo1 .redes{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-decoration: none;
+    line-height: 45px;
+    margin-right: 10px;
+}
+.footer .footer-grupo1 .redes a{
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+.footer .footer-grupo1 .redes a img{
     margin-right: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.footer .footer-grupo2{
+    padding: 15px 10px;
+    text-align: center;
+}
+.footer .footer-grupo2 small{
+    font-size: 15px;
 }
 
 
@@ -70,13 +101,19 @@ nav ul li{
 /* INICIO */
 .main-inicio{
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 70px;
 }
 .parrafo-inicio {
     margin: 20px;
     width: 500px;
+}
+.parrafo-inicio h3 {
+    margin: 20px 0px;
+    text-align: justify;
+    font-weight: bold;
 }
 .parrafo-inicio p {
     margin: 20px 0px;
@@ -84,11 +121,9 @@ nav ul li{
     font-size: 1.2rem;
     font-weight: bold;
 }
-.presentacion-inicio img{
-    margin: 30px;
-    width: 650px;
-    border-radius: 10px;
-    border: solid #BF9270;
+.limitador-carousel{
+    margin: 20px;
+    width: 900px;
 }
 
 
@@ -112,6 +147,10 @@ nav ul li{
     width: 260px;
     border: 2px solid #EDCDBB;
     border-radius: 15px;
+}
+.elem-tienda__tarjeta h4{
+    padding: 5px;
+    margin: 0;
 }
 
 
@@ -228,13 +267,13 @@ nav ul li{
 }
 
 
-/*          MEDIA QUERIES           */
-/*       Celular (hasta 576)        */
+/*           MEDIA QUERIES            */
+/*       Celular (hasta 425px)        */
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 425px) {
 
     header{
-        flex-wrap: column;
+        
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -249,6 +288,17 @@ nav ul li{
         padding: 5px;
     }
 
+    .footer-redes{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3);
+    }
+    .footer-redes li{
+        margin: 15px;
+    }
+    .footer-redes li img{
+        height: 25px;
+    }
+
     /* -------SECCIONES------- */
     /* INICIO */
     .main-inicio{
@@ -257,10 +307,6 @@ nav ul li{
     }
     .parrafo-inicio p {
         margin: 0px;
-    }
-    .presentacion-inicio img{
-        margin: 10px;
-        width: 500px;
     }
   
     /* TIENDA */
