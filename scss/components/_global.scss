@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFEDDB;
+    font-family: 'Sono', sans-serif;
+}
+
+//PARA LISTAS
+ul{
+    li{
+        list-style: none;
+        font-size: 1.5rem;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+//  BASE
+@import './base/variables';
+@import './base/listas';
+
+//  COMPONENTS
+@import './components/global';
+@import './components/header';
+@import './components/footer';
+
+//  VISTAS
+@import './vistas/inicio';
+@import './vistas/tienda';
+@import './vistas/personalizado';
+@import './vistas/galeria';
+@import './vistas/contacto';

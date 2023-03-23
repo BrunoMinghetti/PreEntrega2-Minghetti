@@ -1,0 +1,53 @@
+.cuerpo-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 70px;
+    .limitador-carousel{
+        margin: 20px;
+        width: 900px;
+    }
+    .parrafo-inicio{
+        margin: 20px;
+        width: 500px;
+        h3{
+            margin: 20px 0px;
+            text-align: justify;
+            font-weight: bold;
+        }
+        p{
+            margin: 20px 0px;
+            text-align: justify;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
+
+//              MEDIA QUERIES
+//          Celular (hasta 425px)
+
+@media only screen and (max-width: 425px) {
+    .cuerpo-inicio{
+        flex-wrap: wrap;
+        margin: 10px;
+        .limitador-carousel{
+            margin: 0px;
+        }
+        .parrafo-inicio{
+            margin: 0px;
+            h3{
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 2rem;
+            }
+            p{
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

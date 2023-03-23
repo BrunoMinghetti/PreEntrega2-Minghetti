@@ -1,0 +1,43 @@
+.elem-tienda{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    .tarjeta-tienda{
+        margin: 10px;
+        padding: 20px;
+        background-color: #E3B7A0;
+        border-radius: 15px;
+        text-align: center;
+        width: 300px;
+        img{
+            width: 260px;
+            border: 2px solid #EDCDBB;
+            border-radius: 15px;
+        }
+        h4{
+            padding: 5px;
+            margin: 0;
+        }
+    }
+}
+
+//              MEDIA QUERIES
+//          Celular (hasta 425px)
+
+@media only screen and (max-width: 425px) {
+    .elem-tienda{
+        margin: 10px 0px;
+        justify-content: space-evenly;
+        .tarjeta-tienda{
+            margin: 10px 0px;
+            padding: 10px;
+            width: 250px;
+            img{
+                width: 230px;
+                border: 3px solid #EDCDBB;
+            }
+        }
+    }
+}

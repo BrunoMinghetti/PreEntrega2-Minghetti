@@ -1,0 +1,83 @@
+.cuerpo-pers{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .tarjeta-pers{
+        margin: 152px;
+        width: 800px;
+        padding: 40px 80px 70px 80px;
+        border-radius: 20px;
+        background-color: #E3B7A0;
+        .formulario{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            input{
+                background: none;
+                border: none;
+                outline: none;
+                border-bottom: dotted #BF9270;
+                font-size: medium;    
+                width: 300px;
+            }
+            select{
+                background: none;
+                background-color: #E3B7A0;
+                border: none;
+                outline: none;
+                border: solid #BF9270;
+                border-radius: 10px;
+                padding: 2px;
+                &:hover{
+                    border: solid #EDCDBB;
+                    background-color: #EDCDBB;
+                }
+            }
+            .cargar-img-form {
+                input{
+                    border: dashed #BF9270;
+                    height: 199px;
+                    
+                }
+            }
+            .pedido-form{
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .formulario-pedido{
+                border:none;
+                border: dashed #BF9270;
+                background: none;
+                width: 630px;
+                height: 100px;
+                font-size: large;
+            }
+        }
+        .form-btn{
+            text-decoration: none;
+            border: none;
+            font-weight: bold;
+            color: black;
+            background-color: #EDCDBB;
+            border-radius: 5px;
+            position: relative;
+            top: 20px;
+            padding: 10px;
+            margin: 5px;
+            transition: all;
+            &:hover{
+                background-color:  #FFEDDB;
+            }
+            &:active{
+                background-color: #E3B7A0;
+            }
+        }
+    }
+}
+
+//              MEDIA QUERIES
+//          Celular (hasta 425px)
+
+@media only screen and (max-width: 425px) {
+
+}
