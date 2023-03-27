@@ -1,5 +1,5 @@
 .footer{
-    background-color: #BF9270;
+    background-color: $Paleta-Oscuro;
     width: 100%;
     padding: 15px;
     z-index: 1;
@@ -51,7 +51,7 @@
 //              MEDIA QUERIES
 //          Celular (hasta 425px)
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: $AnchoCelula) {
     .footer .footer-grupo1{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;

@@ -7,7 +7,7 @@
         width: 800px;
         padding: 40px 80px 70px 80px;
         border-radius: 20px;
-        background-color: #E3B7A0;
+        background-color: $Paleta-Medio;
         .formulario{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -16,26 +16,26 @@
                 background: none;
                 border: none;
                 outline: none;
-                border-bottom: dotted #BF9270;
+                border-bottom: dotted $Paleta-Oscuro;
                 font-size: medium;    
                 width: 300px;
             }
             select{
                 background: none;
-                background-color: #E3B7A0;
+                background-color: $Paleta-Medio;
                 border: none;
                 outline: none;
-                border: solid #BF9270;
+                border: solid $Paleta-Oscuro;
                 border-radius: 10px;
                 padding: 2px;
                 &:hover{
-                    border: solid #EDCDBB;
-                    background-color: #EDCDBB;
+                    border: solid $Paleta-Claro;
+                    background-color: $Paleta-Claro;
                 }
             }
             .cargar-img-form {
                 input{
-                    border: dashed #BF9270;
+                    border: dashed $Paleta-Oscuro;
                     height: 199px;
                     
                 }
@@ -46,7 +46,7 @@
             }
             .formulario-pedido{
                 border:none;
-                border: dashed #BF9270;
+                border: dashed $Paleta-Oscuro;
                 background: none;
                 width: 630px;
                 height: 100px;
@@ -58,7 +58,7 @@
             border: none;
             font-weight: bold;
             color: black;
-            background-color: #EDCDBB;
+            background-color: $Paleta-Claro;
             border-radius: 5px;
             position: relative;
             top: 20px;
@@ -66,10 +66,10 @@
             margin: 5px;
             transition: all;
             &:hover{
-                background-color:  #FFEDDB;
+                background-color:  $Paleta-Fondo;
             }
             &:active{
-                background-color: #E3B7A0;
+                background-color: $Paleta-Medio;
             }
         }
     }
@@ -78,6 +78,6 @@
 //              MEDIA QUERIES
 //          Celular (hasta 425px)
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: $AnchoCelula) {
 
 }
