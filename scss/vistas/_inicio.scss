@@ -7,12 +7,13 @@
     .limitador-carousel{
         margin: 20px;
         width: 900px;
+        border: 4px solid $Paleta-Claro;
     }
     .parrafo-inicio{
         margin: 20px;
         width: 500px;
         h3{
-            margin: 20px 0px;
+            margin: 20px 0px 20px 20px;
             text-align: justify;
             font-weight: bold;
         }
@@ -28,12 +29,13 @@
 //              MEDIA QUERIES
 //          Celular (hasta 425px)
 
-@media only screen and (max-width: $AnchoCelula) {
+@media only screen and (max-width: $AnchoCelular) {
     .cuerpo-inicio{
         flex-wrap: wrap;
         margin: 10px;
         .limitador-carousel{
             margin: 0px;
+            border: 2px solid $Paleta-Claro;
         }
         .parrafo-inicio{
             margin: 0px;

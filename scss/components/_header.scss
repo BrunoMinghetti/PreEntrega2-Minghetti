@@ -44,7 +44,7 @@ header{
             height: 80px;
             border-style: none none solid none;
             border-width: 2px;
-            border-color: $ColPaleta-Fondo;
+            border-color: $Paleta-Fondo;
         }
         nav{
             ul{
@@ -54,7 +54,7 @@ header{
                     font-size: 1.2rem;
                     padding: 5px;
                     a{
-                        border: 2px solid $ColPaleta-Medio;
+                        border: 2px solid $Paleta-Medio;
                         padding: 3px;
                         border-radius: 5px;
                     }

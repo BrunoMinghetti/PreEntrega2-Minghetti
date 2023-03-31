@@ -1,43 +1,113 @@
-.elem-tienda{
-    margin: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    .tarjeta-tienda{
-        margin: 10px;
-        padding: 20px;
-        background-color: $Paleta-Medio;
-        border-radius: 15px;
-        text-align: center;
-        width: 300px;
-        img{
-            width: 260px;
-            border: 2px solid $Paleta-Claro;
-            border-radius: 15px;
+.main-tienda{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    .texto-tienda{
+        margin-top: 60px;
+        width: 1700px;
+        display: grid;
+        justify-items: center;
+        .precio{
+            display: flex;
+            h3{
+                border: 2.5px dashed $Paleta-Medio;
+                border-radius: 5px;
+                background-color: $Paleta-Claro;
+            }
         }
-        h4{
-            padding: 5px;
+        p{
             margin: 0;
+            font-size: 1.5rem;
+        }
+    }
+    
+    .elem-tienda{
+        margin: 50px;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 30px;
+        width: 1840px;
+    
+        justify-items: center;
+        justify-content: center;
+        
+        .tarjeta-tienda{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 226.72px 63px auto;
+            padding: 20px;
+            background-color: $Paleta-Medio;
+            border-radius: 10px;
+            border: 2px solid $Paleta-Claro;
+            text-align: center;
+            width: 344px;
+            img{
+                width: 300px;
+                border: 2px solid $Paleta-Claro;
+                border-radius: 7px;
+            }
+            .nombre-tela{
+                display: grid;
+                align-items: center;
+                border: 2px solid $Paleta-Claro;
+                border-radius: 7px;
+                padding: 2px;
+                margin: 0px;
+                line-height: 100%;
+            }
         }
     }
 }
 
+
 //              MEDIA QUERIES
 //          Celular (hasta 425px)
 
-@media only screen and (max-width: $AnchoCelula) {
-    .elem-tienda{
-        margin: 10px 0px;
-        justify-content: space-evenly;
-        .tarjeta-tienda{
-            margin: 10px 0px;
-            padding: 10px;
-            width: 250px;
-            img{
-                width: 230px;
-                border: 3px solid $Paleta-Claro;
+@media only screen and (max-width: $AnchoCelular) {
+    .main-tienda{
+        margin: 0px 10px;
+        .texto-tienda{
+            margin-top: 30px;
+            width: auto;
+            .precio{
+                flex-wrap: wrap;
+                justify-content: center;
+                h3{
+                    border: 3px dashed $Paleta-Medio;
+                    padding: 5px;
+                    width: auto;
+                    margin: 10px 0px;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+            p{
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
+        .elem-tienda{
+            margin: 30px 0px;
+            grid-template-columns: repeat(1, auto);
+            width: auto;
+            
+            .tarjeta-tienda{
+                gap: 15px;
+                grid-template-rows: 189.11px 50px auto;
+                padding: 15px;
+                width: 284px;
+                img{
+                    width: 250px;
+                }
+                .nombre-tela{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    padding: 0px;
+                }
             }
         }
     }
+    
 }
