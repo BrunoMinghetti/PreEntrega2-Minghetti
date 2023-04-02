@@ -1,13 +1,41 @@
-.tarjeta-contacto {
-    margin: 80px 400px;
-    padding: 40px 80px;
-    border-radius: 20px;
-    background-color: $Paleta-Medio;
-    li{
-        margin: 30px 0px;
-    }
-    h2{
-        margin-bottom: 60px;
+.main-contacto{
+    display: grid;
+    justify-content: center;
+    .tarjeta-contacto {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        margin: 120px 0px;
+        padding: 50px;
+        border: 6px solid $Paleta-Claro;
+        border-radius: 20px;
+        background-color: $Paleta-Medio;
+        justify-content: center;
+        .texto-cont{
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+        .redes-cont{
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            text-decoration: none;
+            line-height: 80px;
+            margin-right: 10px;
+            padding: 30px 60px;
+            border: 3px dashed $Paleta-Claro;
+            border-radius: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.7rem;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 20px;
+                }
+            }
+        }
     }
 }
 
@@ -15,5 +43,32 @@
 //          Celular (hasta 425px)
 
 @media only screen and (max-width: $AnchoCelular) {
-
+    .main-contacto{
+        .tarjeta-contacto {
+            width: 310px;
+            margin: 40px 0px;
+            padding: 10px;
+            border: 3px solid $Paleta-Claro;
+            border-radius: 25px;
+            .texto-cont{
+                margin: 15px 0px 30px 0px;
+                font-size: 1.3rem;
+            }
+            .redes-cont{
+                justify-items: center ;
+                line-height: 50px;
+                margin: 0px;
+                padding: 0px;
+                border: none;
+                a{
+                    font-size: 1rem;
+                    img{
+                        height: 30px;
+                        width: 30px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
 }

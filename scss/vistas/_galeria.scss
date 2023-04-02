@@ -1,21 +1,31 @@
-.titulo-tienda {
-    text-align: center;
-    font-size: 1.8rem;
-    margin: 60px 0px;
-}
-
-.fotos-galeria {
-    margin: 40px;
+.main-galeria{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    gap: 30px;
-    img{
-        width: 430px;
-        border: 2px solid $Paleta-Oscuro;
-        transition: all 0.3s;
-        &:hover{
-            transform: scale(1.3);
+    justify-content: center;
+    gap: 60px;
+    margin: 80px 0px;
+    .titulo-tienda {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .fotos-galeria {
+        display: grid;
+        width: 1870px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 40px;
+        img{
+            width: 430px;
+            border: 3px solid $Paleta-Oscuro;
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            // &:active{
+            //     // rotate: 690deg;
+            //     // justify-self: center;
+                
+            // }
         }
     }
 }
@@ -24,26 +34,27 @@
 //          Celular (hasta 425px)
 
 @media only screen and (max-width: $AnchoCelular) {
-    .titulo-tienda{
-        margin: 10px;
-        text-align: center;
-        font-size: 1.2rem;
-        margin: 30px 0px;
-    }
-
-    .fotos-galeria {
-        margin: 0px 30px;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
-        justify-self: center;
-        img{
-            width: 240px;
-            &:hover{
-                transform: none;
-            }
-            &:active{
-                transform: scale(1.2);
-                box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    .main-galeria{
+        .titulo-tienda{
+            margin: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 30px 0px;
+        }
+        .fotos-galeria {
+            margin: 0px 30px;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+            justify-self: center;
+            img{
+                width: 240px;
+                &:hover{
+                    transform: none;
+                }
+                &:active{
+                    transform: scale(1.2);
+                    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+                }
             }
         }
     }

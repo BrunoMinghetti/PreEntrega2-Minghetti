@@ -21,17 +21,14 @@
             font-size: 1.5rem;
         }
     }
-    
     .elem-tienda{
         margin: 50px;
         display: grid;
         grid-template-columns: repeat(5, auto);
         gap: 30px;
         width: 1840px;
-    
         justify-items: center;
         justify-content: center;
-        
         .tarjeta-tienda{
             display: grid;
             gap: 20px;
@@ -56,6 +53,7 @@
                 padding: 2px;
                 margin: 0px;
                 line-height: 100%;
+                font-size: 1.4rem;
             }
         }
     }
