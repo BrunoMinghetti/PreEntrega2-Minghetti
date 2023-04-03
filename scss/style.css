@@ -13,12 +13,13 @@ ul li {
   list-style: none;
   font-size: 1.5rem;
 }
+
 ul li a {
   color: black;
   text-decoration: none;
 }
 
-h3, h2, h4 {
+h3 {
   margin: 0;
 }
 
@@ -33,17 +34,20 @@ header {
   position: sticky;
   top: 0px;
 }
+
 header h1 {
   font-weight: bold;
   margin: 0;
   padding: 10px;
 }
+
 header nav ul {
   text-align: center;
   margin: 0;
   padding: 0;
   display: flex;
 }
+
 header nav ul li {
   margin: 0px 10px;
   font-weight: bold;
@@ -85,6 +89,7 @@ header nav ul li {
   padding: 15px;
   z-index: 1;
 }
+
 .footer .footer-grupo1 {
   width: 100%;
   max-width: 1200px;
@@ -94,14 +99,17 @@ header nav ul li {
   grid-gap: 50px;
   padding: 15px 0px;
 }
+
 .footer .footer-grupo1 .box h2 {
   font-weight: bold;
   margin-bottom: 25px;
   font-size: 20px;
 }
+
 .footer .footer-grupo1 .box p {
   margin-bottom: 10px;
 }
+
 .footer .footer-grupo1 .redes {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -109,20 +117,24 @@ header nav ul li {
   line-height: 45px;
   margin-right: 10px;
 }
+
 .footer .footer-grupo1 .redes a {
   text-decoration: none;
   color: black;
   margin-right: 25px;
 }
+
 .footer .footer-grupo1 .redes a img {
   margin-right: 5px;
   height: 30px;
   width: 30px;
 }
+
 .footer .footer-grupo2 {
   padding: 15px 10px;
   text-align: center;
 }
+
 .footer .footer-grupo2 small {
   font-size: 15px;
 }
@@ -151,20 +163,24 @@ header nav ul li {
   flex-wrap: nowrap;
   margin: 70px;
 }
+
 .cuerpo-inicio .limitador-carousel {
   margin: 20px;
   width: 900px;
   border: 4px solid #EDCDBB;
 }
+
 .cuerpo-inicio .parrafo-inicio {
   margin: 20px;
   width: 500px;
 }
+
 .cuerpo-inicio .parrafo-inicio h3 {
   margin: 20px 0px 20px 20px;
   text-align: justify;
   font-weight: bold;
 }
+
 .cuerpo-inicio .parrafo-inicio p {
   margin: 20px 0px;
   text-align: justify;
@@ -201,26 +217,31 @@ header nav ul li {
   grid-template-columns: 1fr;
   justify-items: center;
 }
+
 .main-tienda .texto-tienda {
   margin-top: 60px;
   width: 1700px;
   display: grid;
   justify-items: center;
 }
+
 .main-tienda .texto-tienda .precio {
   display: flex;
 }
+
 .main-tienda .texto-tienda .precio h3 {
   border: 2.5px dashed #E3B7A0;
   border-radius: 5px;
   background-color: #EDCDBB;
 }
+
 .main-tienda .texto-tienda p {
   margin: 0;
   font-size: 1.5rem;
 }
+
 .main-tienda .elem-tienda {
-  margin: 50px 0px;
+  margin: 50px;
   display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 30px;
@@ -228,6 +249,7 @@ header nav ul li {
   justify-items: center;
   justify-content: center;
 }
+
 .main-tienda .elem-tienda .tarjeta-tienda {
   display: grid;
   gap: 20px;
@@ -240,11 +262,13 @@ header nav ul li {
   text-align: center;
   width: 344px;
 }
+
 .main-tienda .elem-tienda .tarjeta-tienda img {
   width: 300px;
   border: 2px solid #EDCDBB;
   border-radius: 7px;
 }
+
 .main-tienda .elem-tienda .tarjeta-tienda .nombre-tela {
   display: grid;
   align-items: center;
@@ -254,7 +278,6 @@ header nav ul li {
   margin: 0px;
   line-height: 100%;
   font-size: 1.4rem;
-  height: 63px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -301,33 +324,27 @@ header nav ul li {
     padding: 0px;
   }
 }
-.main-pers {
+.cuerpo-pers {
   display: flex;
   justify-content: center;
   align-content: center;
 }
-.main-pers .tarjeta-pers {
+
+.cuerpo-pers .tarjeta-pers {
   margin: 152px;
   width: 800px;
   padding: 40px 80px 70px 80px;
   border-radius: 20px;
   background-color: #E3B7A0;
-  border: 4px solid #EDCDBB;
 }
-.main-pers .tarjeta-pers .formulario {
+
+.cuerpo-pers .tarjeta-pers .formulario {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-.main-pers .tarjeta-pers .formulario h2 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.main-pers .tarjeta-pers .formulario h4 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.main-pers .tarjeta-pers .formulario input {
+
+.cuerpo-pers .tarjeta-pers .formulario input {
   background: none;
   border: none;
   outline: none;
@@ -335,7 +352,8 @@ header nav ul li {
   font-size: medium;
   width: 300px;
 }
-.main-pers .tarjeta-pers .formulario select {
+
+.cuerpo-pers .tarjeta-pers .formulario select {
   background: none;
   background-color: #E3B7A0;
   border: none;
@@ -344,19 +362,23 @@ header nav ul li {
   border-radius: 10px;
   padding: 2px;
 }
-.main-pers .tarjeta-pers .formulario select:hover {
+
+.cuerpo-pers .tarjeta-pers .formulario select:hover {
   border: solid #EDCDBB;
   background-color: #EDCDBB;
 }
-.main-pers .tarjeta-pers .formulario .cargar-img-form input {
+
+.cuerpo-pers .tarjeta-pers .formulario .cargar-img-form input {
   border: dashed #BF9270;
-  height: 180px;
+  height: 199px;
 }
-.main-pers .tarjeta-pers .formulario .pedido-form {
+
+.cuerpo-pers .tarjeta-pers .formulario .pedido-form {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.main-pers .tarjeta-pers .formulario .formulario-pedido {
+
+.cuerpo-pers .tarjeta-pers .formulario .formulario-pedido {
   border: none;
   border: dashed #BF9270;
   background: none;
@@ -364,7 +386,8 @@ header nav ul li {
   height: 100px;
   font-size: large;
 }
-.main-pers .tarjeta-pers .form-btn {
+
+.cuerpo-pers .tarjeta-pers .form-btn {
   text-decoration: none;
   border: none;
   font-weight: bold;
@@ -377,99 +400,58 @@ header nav ul li {
   margin: 5px;
   transition: all;
 }
-.main-pers .tarjeta-pers .form-btn:hover {
+
+.cuerpo-pers .tarjeta-pers .form-btn:hover {
   background-color: #FFEDDB;
 }
-.main-pers .tarjeta-pers .form-btn:active {
+
+.cuerpo-pers .tarjeta-pers .form-btn:active {
   background-color: #E3B7A0;
 }
 
-@media only screen and (max-width: 425px) {
-  .main-pers .tarjeta-pers {
-    margin: 40px 0px;
-    width: 300px;
-    border-width: 3px;
-    padding: 20px;
-    display: grid;
-    gap: 15px;
-  }
-  .main-pers .tarjeta-pers .formulario {
-    font-size: 1.1rem;
-    grid-template-columns: repeat(1, 1fr);
-    width: 254px;
-  }
-  .main-pers .tarjeta-pers .formulario h2 {
-    font-size: 1.3rem;
-    margin-bottom: 5px;
-  }
-  .main-pers .tarjeta-pers .formulario h4 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-  .main-pers .tarjeta-pers .formulario .datos-form {
-    padding-bottom: 20px;
-    border-bottom: 3px solid #EDCDBB;
-  }
-  .main-pers .tarjeta-pers .formulario input {
-    width: 254px;
-  }
-  .main-pers .tarjeta-pers .formulario .cargar-img-form {
-    padding-bottom: 20px;
-    border-bottom: 3px solid #EDCDBB;
-  }
-  .main-pers .tarjeta-pers .formulario .pedido-form {
-    grid-column-end: 1;
-  }
-  .main-pers .tarjeta-pers .formulario .formulario-pedido {
-    width: 254px;
-  }
-  .main-pers .tarjeta-pers .form-btn {
-    position: static;
-  }
-}
 .main-galeria {
   display: grid;
   justify-content: center;
   gap: 60px;
   margin: 80px 0px;
 }
+
 .main-galeria .titulo-tienda {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
+
 .main-galeria .fotos-galeria {
   display: grid;
+  width: 1870px;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
-  gap: 30px;
-  width: 1810px;
+  gap: 40px;
 }
+
 .main-galeria .fotos-galeria img {
   width: 430px;
   border: 3px solid #BF9270;
   transition: all 0.3s;
 }
+
 .main-galeria .fotos-galeria img:hover {
   transform: scale(1.1);
 }
 
 @media only screen and (max-width: 425px) {
-  .main-galeria {
-    margin: 40px 0px;
-    gap: 20px;
-  }
   .main-galeria .titulo-tienda {
+    margin: 10px;
     text-align: center;
     font-size: 1.2rem;
-    margin: 20px 20px;
+    margin: 30px 0px;
   }
   .main-galeria .fotos-galeria {
     margin: 0px 30px;
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
     justify-self: center;
-    width: 240px;
   }
   .main-galeria .fotos-galeria img {
     width: 240px;
@@ -478,7 +460,7 @@ header nav ul li {
     transform: none;
   }
   .main-galeria .fotos-galeria img:active {
-    transform: scale(1.3);
+    transform: scale(1.2);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
 }
@@ -486,6 +468,7 @@ header nav ul li {
   display: grid;
   justify-content: center;
 }
+
 .main-contacto .tarjeta-contacto {
   display: flex;
   flex-wrap: wrap;
@@ -497,11 +480,13 @@ header nav ul li {
   background-color: #E3B7A0;
   justify-content: center;
 }
+
 .main-contacto .tarjeta-contacto .texto-cont {
   text-align: center;
   margin-bottom: 50px;
   font-weight: bold;
 }
+
 .main-contacto .tarjeta-contacto .redes-cont {
   display: grid;
   grid-template-columns: repeat(1, auto);
@@ -512,11 +497,13 @@ header nav ul li {
   border: 3px dashed #EDCDBB;
   border-radius: 10px;
 }
+
 .main-contacto .tarjeta-contacto .redes-cont a {
   text-decoration: none;
   color: black;
   font-size: 1.7rem;
 }
+
 .main-contacto .tarjeta-contacto .redes-cont a img {
   height: 50px;
   width: 50px;
@@ -551,5 +538,6 @@ header nav ul li {
     margin-right: 5px;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
